@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>このチャンネルは非公開です</title>
+    <style>
+        /* 全体のスタイル */
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            background-color: #36393f; /* Discordのダークモード背景色 */
+            color: #dcddde; /* Discordのテキスト色 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            overflow: hidden; /* オーバーフローを隠す */
+        }
+        
+        /* コンテナのスタイル */
+        .container {
+            padding: 40px;
+            background-color: #2f3136; /* Discordのチャンネルリスト背景色 */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* アニメーション */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 見出し */
+        h1 {
+            font-size: 2.5rem;
+            color: #7289da; /* Discordのアクセントカラー */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: pulse 2s infinite;
+        }
+
+        /* パルスアニメーション */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* メッセージ */
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        /* ボタンのスタイル */
+        .btn {
+            background-color: #5865f2; /* Discordのボタン色 */
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:hover {
+            background-color: #4752c4;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        /* 隠された画像や要素 */
+        .hidden-message {
+            margin-top: 30px;
+            opacity: 0;
+            animation: fadein-late 3s forwards 2s; /* 2秒後にフェードイン開始 */
+        }
+
+        @keyframes fadein-late {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .laugh-emoji {
+            font-size: 4rem;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-30px); }
+            60% { transform: translateY(-15px); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>透かしはホモの始まり</h1>
+        <p>
+            やば❗笑 <br>
+            田所の覗き癖、めっちゃ進行してるやん！<br>
+            学校では陰キャなのに電波界隈では人気なんやな笑
+        </p>
+        <p>
+            また学校来いよ❔✊ みんなで遊ぼうぜ
+        </p>
+        <a href="https://youtu.be/niKAylKNIEI?si=sWR2oXtYk8AOr1uH" class="btn">プレゼントあげる</a>
+
+        <div class="hidden-message">
+            <p>
+                <strong>パン工場ゲーミングを<br>
+                応援しています</strong>
+            </p>
+            <span class="laugh-emoji">😂</span>
+        </div>
+    </div>
+
+</body>
+</html>
